@@ -1,0 +1,13 @@
+:root {
+  /* colors */
+  --secondary-color: rgba(154, 150, 0.769);
+
+  /* font-size: ; */
+  --main--size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.section-title {
+  --headers-family: "Open Sans", sans-serif;
+}

@@ -1,0 +1,235 @@
+* {
+  font-family: var(--open-headars-family);
+  /* margin: 0;
+  padding: 0;
+  box-sizing: border-box; */
+  scroll-behavior: smooth;
+}
+section {
+  margin-top: 120px;
+}
+.burger-menu {
+  display: none;
+}
+body {
+  background-color: #19191b;
+  color: #ffff;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header {
+  position: sticky;
+  top: 0;
+  background-color: #19191b;
+  z-index: 3;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+
+  width: 100%;
+}
+.navigation {
+  display: flex;
+  list-style-type: none;
+  gap: 40px;
+}
+.nav_item a {
+  color: var(--greenN-color);
+  text-decoration: none;
+  transition: 0.3s;
+  font-family: var(--open-headars-family);
+}
+.nav_item a:hover {
+  color: var(--primery-color);
+}
+.search input {
+  background: transparent;
+  border: 1px solid #ffff;
+  color: #ffff;
+  border-radius: 5px;
+  padding: 5px;
+}
+/* hero */
+.hero {
+  margin-top: 0;
+  padding-top: 0;
+  background-image: url(../imeges/__MACOSX/images/Rectangle\ 9521.png);
+  background-size: contain;
+  background-position: start;
+  background-repeat: no-repeat;
+}
+.wrapper {
+  display: flex;
+}
+.wrapper_left {
+  margin-top: 50px;
+}
+.wrapper_left h1 {
+  font-size: 80px;
+  line-height: 70px;
+  font-family: var(--open-headars-family);
+  flex-shrink: 0;
+}
+.wrapper_left p {
+  color: var(--greenN-color);
+  font-size: var(--main-size);
+  font-family: var(--open-headars-family);
+}
+.action-btn {
+  height: 60px;
+  border-radius: 4px;
+  width: 200px;
+  background-color: var(--primery-color);
+  flex-shrink: 0;
+  font-size: var(--main-size);
+  color: #ffff;
+  font-style: normal;
+  font-weight: 700;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+  margin-top: 30px;
+}
+.action-btn img {
+  width: 20px;
+  height: 20px;
+}
+.wrpper_right {
+  width: 50%;
+  position: relative;
+}
+.right__icons {
+  position: absolute;
+}
+/* .wrpper_right img:first-child {
+  position: absolute; 
+} */
+#vector-1 {
+  top: 65px;
+}
+#vector-2 {
+  top: 30px;
+  right: 0px;
+}
+#vector-3 {
+  bottom: 120px;
+  left: -70px;
+}
+#vector-4 {
+  right: -11px;
+  bottom: 182px;
+}
+/* services */
+.services {
+  margin-top: 175px;
+  padding-top: 50px;
+}
+.section-title {
+  font-size: var(--section-title-size);
+  font-family: var(--open-headars-family);
+}
+.services .section-title {
+  max-width: 700px;
+  text-align: center;
+  margin: 0 auto;
+}
+.services_list {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 80px;
+}
+.services_list__item {
+  max-width: 300px;
+  margin: 0 40px;
+  text-align: center;
+}
+.item__title {
+  font-size: 28px;
+  font-weight: 600;
+}
+.item__description {
+  color: var(--greenN-color);
+}
+/*  parfolio */
+.portfolio {
+  margin-top: 120px;
+  padding-top: 50px;
+}
+.portfolio-list {
+  display: flex;
+}
+.portfolio-list__item-second {
+  margin-top: 50px;
+}
+.portfolio-list__item-third {
+  margin-top: 100px;
+}
+.portfolio-list div {
+  width: 35%;
+}
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+.dots__iten {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: black;
+}
+.arrows {
+  display: none;
+  justify-content: center;
+  gap: 12px;
+}
+.arrows .active {
+  background-color: #5454d4;
+}
+.arrow {
+  width: 38px;
+  height: 38px;
+  background-color: var(--greenN-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dots .actiwe {
+  width: 16px;
+  background-color: #5454d4;
+  border-radius: 35%;
+}
+.contact-us .section-title {
+  max-width: 800px;
+}
+.contact-us .wrapper {
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-us .action-btn {
+  margin-right: 20px;
+}
+.site-data {
+  color: var(--greenN-color);
+  font-size: 16px;
+}
+.burger-list {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+  position: fixed;
+  background-color: #19191b;
+  width: 100%;
+  top: 48px;
+  z-index: 3;
+}
